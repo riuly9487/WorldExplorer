@@ -438,7 +438,7 @@ export const hardQuestionnaire = [{
     id: 11,
     question: `This is a food that resembles European cuisine but originates from a Southeast 
                Asian country. Which country does it belong to?`,
-    img: 'assets/content/vietnam/banhmi.webp',
+    img: 'https://res.cloudinary.com/dyghlzxwz/image/upload/q_auto/f_auto/v1775018413/banhmi_bxaqjx.webp',
     answer1: 'Vietnam',
     answer2: 'Laos',
     answer3: 'Cambodia',
