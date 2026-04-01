@@ -1,0 +1,201 @@
+@import './color.css';
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 45px 0px;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--seagull-30);
+
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+}
+
+.hero-description-title,
+.value-proposition-title,
+.value-proposition-container .title {
+    font-size: 36px;
+    font-weight: bold;
+    
+    margin-bottom: 10px;
+}
+
+.hero-description-subtitle {
+    font-size: 18px;
+}
+
+.hero-section img,
+.value-proposition-container img {
+    width: 50%;
+
+    border-radius: 12px;
+    box-shadow: 0 0 2px var(--seagull-100);
+    
+    cursor: pointer;
+}
+
+.hero-section img {
+    width: 50%;
+
+}
+
+.institution-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    background-color: var(--seagull-30);
+
+    margin-bottom: 20px;
+}
+
+.institution-section img {
+    width: 15%;
+
+    margin-left: 20px;
+    
+}
+
+.value-proposition-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.value-proposition-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.value-proposition-title {
+    margin-bottom: 20px;
+
+}
+
+.value-proposition-container img{
+    width: 40%;
+    
+}
+
+.value-proposition-container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    width: 600px;
+
+}
+
+.value-proposition-container .title {
+    background-color: var(--seagull-30);
+
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+}
+
+.value-proposition-container .description > div {
+    line-height: 1.7;
+    font-size: 16px;
+    text-align: justify;
+
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column-reverse;
+
+        margin: 8px 0;
+    }
+
+    .hero-description-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    .hero-description {
+        width: 80%;
+
+        text-align: center;
+
+        padding: 12px 0;
+        margin-bottom: 8px;
+        border-radius: 12px;
+    }
+
+    .hero-description-title,
+    .value-proposition-title,
+    .value-proposition-container .title {
+        font-size: 16px;
+        
+        text-align: center;
+    }
+
+    .hero-description-subtitle {
+        font-size: 12px;
+    }
+
+    .hero-section img,
+    .value-proposition-container img {
+        width: 80%;
+
+        margin-bottom: 8px;
+    }
+
+    .institution-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 12px;
+
+        padding: 8px;
+    }
+
+    .institution-section img {
+        width: 30%;
+
+        margin-top: 8px;
+    }
+
+    .value-proposition-container {
+        flex-direction: column;
+
+        margin-bottom: 20px;
+    }
+
+    .value-proposition-container .content {
+         width: 80%;
+
+    }
+
+    .value-proposition-container .description > div {
+        font-size: 12px;
+
+    }
+}
+

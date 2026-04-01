@@ -1,0 +1,202 @@
+@import 'color.css';
+
+.btn-toggle {
+    margin-right: 20px;
+    
+}
+
+.btn-toggle, .btn-next-question {
+    opacity: 0;
+
+    pointer-events: none; 
+
+}
+
+.btn-toggle.visible, .btn-next-question.visible {
+    opacity: 1;
+    
+    pointer-events: all;
+    
+    transition: opacity 0.5s ease;
+}
+
+.quiznow-gameplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: auto;
+}
+
+.quiznow-question, .quiznow-answer {
+    padding: 20px;
+
+}
+
+.quiznow-question, .quiznow-explanation {
+    line-height: 1.7;
+    font-size: 20px;
+
+    color: whitesmoke;
+
+    box-shadow: 0 0 4px whitesmoke;
+}
+
+.quiznow-question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--seagull-90);
+
+    height: 360px;
+    margin-bottom: 20px;
+
+}
+
+.quiznow-question img {
+    width: 25%;
+    aspect-ratio: 3/2;
+
+    margin-bottom: 10px;
+}
+
+.quiznow-question img.none {
+    display: none;
+}
+
+.quiznow-answer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+
+    height: 240px;
+
+}
+
+.quiznow-choice {
+    opacity: 1;
+
+}
+
+.quiznow-choice.invisible {
+    opacity: 0;
+
+    pointer-events: none; 
+    
+    transition: opacity 0.5s ease;
+}
+
+#a1 {
+    background-color: rgb(212, 75, 75);
+
+}
+
+#a2 {
+    background-color: rgb(255, 242, 108);
+    
+}
+
+#a3 {
+    background-color: rgb(147, 255, 108);
+    
+}
+
+#a4 {
+    background-color: rgb(135, 185, 255);
+    
+}
+
+#a1, #a2, #a3, #a4 {
+    transition: background-color 0.3 ease, color 0.3 ease, box-shadow 0.3 ease;
+
+}
+
+#a1:hover {
+    background-color: rgb(180, 34, 34);
+}
+
+#a2:hover {
+    background-color: rgb(225, 177, 20);
+}
+
+#a3:hover {
+    background-color: rgb(68, 206, 18);
+}
+
+#a4:hover {
+    background-color: rgb(25, 100, 204);
+}
+
+#a1:hover, #a2:hover, #a3:hover, #a4:hover {
+    color: whitesmoke;
+    
+    box-shadow: 0 0 4px whitesmoke;
+
+}
+
+.quiznow-explanation {
+    position: absolute;
+    bottom: 0;
+
+    background-color: var(--seagull-90);
+
+    height: 300px;
+    width: 100%;
+
+    opacity: 0;
+
+    pointer-events: none; 
+
+    transition: opacity 0.5s ease;
+}
+
+.quiznow-explanation div {
+    padding: 10px 20px;
+
+}
+
+.quiznow-explanation.visible {
+    opacity: 1;
+
+}
+
+@media screen and (max-width: 800px) {
+    .button-group {
+        display: flex;
+
+    }
+
+    .btn-toggle {
+        margin-right: 10px;
+        
+    }
+
+    .quiznow-question, .quiznow-explanation {
+        font-size: 16px;
+        text-align: justify;
+
+    }
+
+    .quiznow-question {
+        height: 300px;
+
+    }
+
+    .quiznow-question img {
+        width: 75%;
+
+    }
+
+    .quiznow-answer {
+        height: 200px;
+
+    }
+
+    .quiznow-choice {
+        font-size: 16px !important;
+
+    }
+    
+}

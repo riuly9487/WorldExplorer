@@ -1,0 +1,504 @@
+@import './color.css';
+
+.website-countryprofile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1200px;
+    
+    margin: auto;
+
+}
+
+/* Header containing flag, country name, and description */
+
+.website-countryprofile-header {
+    display: flex;
+
+    padding: 20px;
+    width: 100%;
+}
+
+.website-countryprofile-picture {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex: 0 0 auto;
+
+    margin-right: 20px;
+}
+
+.website-countryprofile-picture img {
+    width: 160px;
+    aspect-ratio: 3/2;
+
+    border-radius: 6px;
+    box-shadow: 0 0 2px var(--seagull-100);
+}
+
+.website-countryprofile-subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.website-countryprofile-subtitle .country {
+    font-size: 32px;
+    font-weight: 600;
+    transform-origin: left;
+
+    transition: transform 0.3s ease;
+}
+
+.website-countryprofile-subtitle .description {
+    font-size: 20px;
+    color: var(--seagull-100);
+    transform-origin: right;
+
+    opacity: 0.6;
+
+    transition: transform 0.3s ease;
+}
+
+/* Hero Image */
+
+.website-countryprofile-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin: auto;
+    padding: 20px;
+}
+
+.website-countryprofile-banner img {
+    width: 60%;
+
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px var(--seagull-100);
+}
+
+/* Geographical Information */
+
+.website-countryprofile-geographical,
+.website-countryprofile-demographic,
+.website-countryprofile-facts-gov-mny,
+.website-countryprofile-nationalfood,
+.website-countryprofile-festival {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 20px 0;
+}
+
+.website-countryprofile-geographical .heading,
+.website-countryprofile-demographic .heading,
+.website-countryprofile-facts-gov-mny .heading,
+.website-countryprofile-nationalfood .heading,
+.website-countryprofile-festival .heading,
+.website-countryprofile-geographical-description .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    background-color: var(--seagull-50);
+
+    width: 100%;
+
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.website-countryprofile-geographical-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+}
+
+.website-countryprofile-geographical-content .country-map {
+    width: 50%;
+
+    border-radius: 10px;
+    box-shadow: 0 0 2px var(--seagull-100);
+}
+
+.website-countryprofile-geographical-description {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.website-countryprofile-geographical-description .description,
+.website-countryprofile-demographic .description, .demographic-hero .title,
+.website-countryprofile-facts-gov-mny .description,
+.website-countryprofile-nationalfood .description,
+.website-countryprofile-festival .description  {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+
+    margin-bottom: 20px;
+}
+
+.website-countryprofile-geographical-nearby-country-normal {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.website-countryprofile-geographical-nearby-country-small {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 20px;
+
+}
+
+.website-countryprofile-geographical-nearby-country-normal .country,
+.website-countryprofile-geographical-nearby-country-small .country {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+
+    background-color: var(--seagull-10);
+
+    border-radius: 6px;
+    box-shadow: 0 0 2px var(--seagull-100);
+
+    cursor: pointer;
+}
+
+.website-countryprofile-geographical-nearby-country-normal .country img,
+.website-countryprofile-geographical-nearby-country-small .country img {
+    width: 120px;
+    aspect-ratio: 3/2;
+
+    border-radius: 6px;
+    box-shadow: 0 0 2px var(--seagull-100);
+}
+
+.website-countryprofile-geographical-nearby-country-normal .country div,
+.website-countryprofile-geographical-nearby-country-small .country div {
+    padding: 6px 0;
+}
+
+/* Demographic, National Food, and Festival Information */
+
+.website-countryprofile-demographic .description,
+.website-countryprofile-facts-gov-mny .description,
+.website-countryprofile-nationalfood .description,
+.website-countryprofile-festival .description {
+    width: 100%;
+}
+
+.demographic-slideshow,
+.nationalfood-slideshow,
+.festival-slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 960px;
+}
+
+.demographic-slideshow img,
+.nationalfood-slideshow img,
+.festival-slideshow img {
+    margin: 0 50px;
+    border-radius: 6px;
+    box-shadow: 0 0 12px var(--seagull-100);
+}
+
+.demographic-slideshow img,
+.festival-slideshow img,
+.nationalfood-hero img {
+    width: 720px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+}
+
+.demographic-hero,
+.nationalfood-hero,
+.festival-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.demographic-hero .demographic-name,
+.nationalfood-hero .nationalfood-name,
+.festival-hero .festival-name {
+    margin-top: 20px;
+}
+
+.mobile-button {
+    display: none;
+
+    pointer-events: none;
+}
+
+/* Country Facts, Governence and Monetary System Information */
+
+.website-countryprofile-facts-gov-mny {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.website-countryprofile-facts-gov-mny .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 40%;
+
+    border-radius: 6px;
+    box-shadow: 0 0 12px var(--seagull-100);
+}
+
+.website-countryprofile-facts-gov-mny .image-container img {
+    width: 100%;
+
+    border-radius: 6px;
+}
+
+.website-countryprofile-facts-gov-mny .image-description {
+    width: 50%;
+    text-align: center;
+
+    margin: 20px 0;
+}
+
+/* Animation */
+
+.website-countryprofile-subtitle .country:hover {
+    transform: scale(1.15);
+}
+.website-countryprofile-subtitle .description:hover {
+    transform: scale(1.15);
+}
+
+@media screen and (max-width: 800px) {
+    .website-countryprofile {
+        max-width: 100%;
+        
+        margin: auto;
+
+    }
+
+    /* Header containing flag, country name, and description */
+
+    .website-countryprofile-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+        width: 100%;
+
+    }
+
+    .website-countryprofile-picture {
+        display: flex;
+        justify-content: center;
+
+        width: 80%;
+
+        margin: 0 0 10px 0;
+
+    }
+
+    .website-countryprofile-picture img {
+        width: 50%;
+
+    }
+
+    .website-countryprofile-subtitle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .website-countryprofile-subtitle .country {
+        font-size: 16px;
+
+        margin-bottom: 10px;
+
+    }
+
+    .website-countryprofile-subtitle .description {
+        font-size: 12px;    
+
+    }
+
+    /* Hero Image */
+
+    .website-countryprofile-banner {
+        width: 80%;
+
+    }
+
+    .website-countryprofile-banner img {
+        width: 80%;
+
+    }
+
+    .website-countryprofile-banner > div {
+        font-size: 12px;
+        text-align: center;
+        
+    }
+
+    /* Geographical Information */
+
+    .website-countryprofile-geographical .heading,
+    .website-countryprofile-demographic .heading,
+    .website-countryprofile-facts-gov-mny .heading,
+    .website-countryprofile-nationalfood .heading,
+    .website-countryprofile-festival .heading,
+    .website-countryprofile-geographical-description .title {
+        font-size: 16px;
+        text-align: center;
+        
+        width: 80%;
+
+    }
+
+    .website-countryprofile-geographical-content {
+        flex-direction: column;
+
+        width: 80%;
+    }
+
+    .website-countryprofile-geographical-content .country-map {
+        width: 100%;
+
+    }
+
+    .website-countryprofile-geographical-description,
+    .website-countryprofile-geographical-description .title {
+        width: 100%;
+    }
+
+    .website-countryprofile-geographical-description .description,
+    .website-countryprofile-demographic .description, .demographic-hero .title,
+    .website-countryprofile-facts-gov-mny .description,
+    .website-countryprofile-nationalfood .description,
+    .website-countryprofile-festival .description  {
+        font-size: 12px;
+        
+    }
+
+    .website-countryprofile-geographical-nearby-country-normal,
+    .website-countryprofile-geographical-nearby-country-small {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+
+    }
+
+    .website-countryprofile-geographical-nearby-country-normal .country img,
+    .website-countryprofile-geographical-nearby-country-small .country img {
+        width: 100px;
+
+    }
+
+    /* Demographic, National Food, and Festival Information */
+
+    .website-countryprofile-demographic .description,
+    .website-countryprofile-facts-gov-mny .description,
+    .website-countryprofile-nationalfood .description,
+    .website-countryprofile-festival .description {
+        width: 80%;
+    }
+
+    .demographic-slideshow,
+    .nationalfood-slideshow,
+    .festival-slideshow {
+        display: flex;
+        flex-direction: column;
+        
+        width: 80%;
+
+    }
+
+    .demographic-slideshow img,
+    .nationalfood-slideshow img,
+    .festival-slideshow img {
+        margin: 0 25px;
+
+    }
+
+    .demographic-slideshow img,
+    .festival-slideshow img,
+    .nationalfood-hero img {
+        width: 80%;
+    }
+
+    .demographic-hero,
+    .nationalfood-hero,
+    .festival-hero{
+        margin-bottom: 20px;
+    }
+
+    .demographic-hero .demographic-name,
+    .nationalfood-hero .nationalfood-name,
+    .festival-hero .festival-name {
+        font-size: 12px;
+    }
+
+    .desktop-button {
+        display: none;
+
+        pointer-events: none;
+    }
+
+    .mobile-button {
+        display: flex;
+
+        pointer-events: all;
+
+    }
+
+    .btn-previous {
+        margin-right: 40px;
+
+    }
+
+    /* Country Facts, Governence and Monetary System Information */
+
+    .website-countryprofile-facts-gov-mny .image-container {
+        width: 60%;
+
+    }
+
+    .website-countryprofile-facts-gov-mny .image-description {
+        font-size: 12px;
+
+    }
+
+}

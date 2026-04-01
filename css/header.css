@@ -1,0 +1,150 @@
+@import './color.css';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    background-color: var(--seagull-30);
+
+    padding: 24px;
+    box-shadow: 0px 0px 4px var(--seagull-100);
+    margin-bottom: 8px;
+}
+
+.header > div {
+    flex: 1;
+
+}
+
+.header-accessibility {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mobile-layout {
+    display: none;
+    
+    cursor: pointer;
+}
+
+.mobile-layout img {
+    width: 24px;
+    height: 24px;
+
+    padding: 0px 12px;
+
+}
+
+.website-title {
+    display: flex;
+    align-items: center;
+
+    border-radius: 48px;
+    padding: 0px 12px;
+
+    cursor: pointer;
+
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.2s ease, scale 0.2s ease;
+}
+
+.website-title img {
+    display: flex;
+    align-items: center;
+
+    width: 64px;
+}
+
+.website-nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+
+    list-style: none;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+
+    border-radius: 48px;
+    padding: 12px;
+
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.2s ease, scale 0.2s ease;
+}
+
+.website-title:hover, li:hover {
+    color: var(--saffron-30);
+
+    background-color: var(--seagull-90);
+}
+
+li.icon img {
+    display: flex;
+    align-items: center;
+
+    width: 32px;
+
+    transition: filter 0.5s ease, box-shadow 0.5s ease, scale 0.2s ease;
+}
+
+li.icon:hover img {
+    filter: brightness(0) invert(1);
+}
+
+
+.website-title:active, li:active, li.icon img:active {
+    color: white;
+    
+    box-shadow: 5px 5px var(--saffron-30);
+    
+    scale: 0.9;
+}
+
+@media screen and (max-width: 800px) {
+
+    .header {
+        flex-direction: column;
+        align-items: normal;
+
+        font-size: 16px;
+
+        padding: 0;
+    }
+
+    .mobile-layout {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 12px;
+    }
+
+    .website-title img {
+        width: 24px;
+    }
+
+    .website-nav {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--seagull-40);
+    }
+
+    .website-nav.visible {
+        display: flex;
+    }
+
+}

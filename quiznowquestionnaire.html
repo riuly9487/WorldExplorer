@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WorldExplorer
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/quiznowlayout.css">
+        <link rel="stylesheet" href="css/questionnaire.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+        <audio class="audio-correct">
+            <source src="https://res.cloudinary.com/dyghlzxwz/video/upload/q_auto/f_auto/v1775018440/correct_iypeeu.wav" type="audio/wav">
+        </audio>
+        <audio class="audio-wrong">
+            <source src="https://res.cloudinary.com/dyghlzxwz/video/upload/q_auto/f_auto/v1775018441/incorrect_itft49.wav" type="audio/wav">
+        </audio>
+        <audio class="audio-bgm">
+            <source src="https://res.cloudinary.com/dyghlzxwz/video/upload/q_auto/f_auto/v1775018453/quizbackgroundmusic_zovtws.ogg" type="audio/ogg">
+        </audio>
+    </head>
+    <body>
+        <div class="website-navigation-functionality-trio">
+            <div>
+                <button class="btn-quit">
+                    Quit?
+                </button>
+            </div>
+            <div class="current-progress">
+            </div>
+            <div class="button-group">
+                <button class="btn-toggle">
+                    ?
+                </button>
+                <button class="btn-next-question">
+                    Next →
+                </button>
+            </div>
+        </div>
+        <div class="quiznow-gameplay">
+            <div class="quiznow-question">
+                <img class="question-image" src="">
+                <div class="question-text">
+                </div>
+            </div>
+            <div class="quiznow-answer">
+                <button id="a1" class="quiznow-choice" data-value="1">
+                </button>
+                <button id="a2" class="quiznow-choice" data-value="2">
+                </button>
+                <button id="a3" class="quiznow-choice" data-value="3">
+                </button>
+                <button id="a4" class="quiznow-choice" data-value="4">
+                </button>
+            </div>
+            <div class="quiznow-explanation">
+                <div class="explanation-result">
+                </div>
+                <div class="explanation-section">
+                </div>
+            </div>
+        </div>
+        <script type="module" src="../js/button.js"></script>
+        <script type="module" src="../js/generateQuestionnaireHTML.js"></script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WorldExplorer
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/quiznowlayout.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="website-navigation-functionality-mono">
+            <div>
+                <button class="btn-exit">
+                    ←
+                </button>
+            </div>
+        </div>
+        <div class="quiznow-header">
+            <div class="title">
+                WorldExplorer’ Quiznow Game
+            </div>
+            <div class="subtitle">
+                Test out your knowledge here
+            </div>
+        </div>
+        <div class="quiznow-difficulty-selection">
+            <button id="easy" class="btn-go-to-difficulty" data-selection="easy" data-destination="quiznowquestionnaire.html">
+                Easy
+            </button>
+            <button id="normal" class="btn-go-to-difficulty" data-selection="normal" data-destination="quiznowquestionnaire.html">
+                Normal
+            </button>
+            <button id="hard" class="btn-go-to-difficulty" data-selection="hard" data-destination="quiznowquestionnaire.html">
+                Hard
+            </button>
+        </div>
+        <script type="module" src="../js/button.js"></script>
+        <script type="module" src="../js/questionnaire.js"></script>
+    </body>
+</html>

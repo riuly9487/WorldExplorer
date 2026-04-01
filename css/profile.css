@@ -1,0 +1,307 @@
+@import 'color.css';
+
+.profile-layout {
+    display: flex;
+
+    background-color: whitesmoke;
+
+    line-height: 1.7;
+
+    width: 1000px;
+    height: 800px;
+
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgb(224, 224, 224);
+}
+
+.profile-layout .function-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    
+    text-align: center;
+
+    border-right: 1px solid grey;
+}
+
+.item {
+    width: 100%;
+
+    font-size: 24px;
+
+    padding: 20px 0px;
+
+    transition: background-color 0.2s ease;
+
+    cursor: pointer;
+}
+
+.profile-layout .function-display{
+    flex: 3;
+
+    padding: 20px;
+
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.profile-section div:first-child {
+    display: flex;
+
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    
+    margin-right: 20px;
+    border-radius: 12px;
+}
+
+.profile-data-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    align-items: center;
+
+    font-size: 18px;
+
+}
+
+.edit-profile-grid {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 20px;
+    align-items: center;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: opacity 0.2s ease;
+}
+
+.edit-profile-grid.active {
+    opacity: 1;
+
+    pointer-events: all;
+}
+
+.edit-profile-grid .reset,
+.edit-profile-grid .submit {
+    text-align: center;
+    
+}
+
+.achievement-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.achievement-heading {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.achievement-obtained,
+.achievement-not-obtained {
+    display: grid;
+    grid-template-columns: 128px 128px 128px 128px 128px;
+    gap: 20px;
+}
+
+.achievement-container {
+    display: flex;
+    flex-direction: column;
+
+    background: #fdfdfd;
+
+    max-width: 136px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgb(224, 224, 224);
+
+}
+
+.achievement-container img {
+    width: 100%;
+
+}
+
+.achievement-container img.black-white {
+    filter: grayscale(100%)
+
+}
+
+.achievement-name,
+.achievement-description {
+    font-weight: 300;
+
+    margin: 0 4px;
+}
+
+.achievement-name {
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.achievement-description {
+    font-size: 12px;
+
+}
+
+.setting-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 600px;
+
+    margin: auto;
+    
+}
+
+.reset-title,
+.user-alert {
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+}
+
+.reset-title {
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+.user-alert {
+    margin-top: 20px;
+
+}
+
+.item:hover {
+    background-color: lightgrey
+
+}
+
+.item.active {
+    background-color: var(--seagull-20);
+    
+}
+
+@media screen and (max-width: 800px) {
+    .profile-layout {
+        flex-direction: column;
+
+        width: 90%;
+        height: 100%;
+
+    }
+
+    .profile-layout .function-title{
+        flex-direction: row;
+        flex: 0;
+
+        border-bottom: 1px solid grey;
+    }
+
+    .item {
+        font-size: 16px;
+
+        
+        padding: 10px 0px;
+    }
+
+    .profile-layout .function-display{
+        flex: 0;
+
+        padding: 20px;
+
+    }
+
+    .profile-section {
+        flex-direction: column;
+
+    }
+
+    .profile-section > div:last-child {
+        text-align: center;
+
+        margin-top: 20px;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .profile-data-grid {
+        font-size: 14px;
+
+    }
+
+    .edit-profile-grid {
+        grid-template-columns: auto auto;
+
+        height: 240px;
+    }
+
+    .achievement-heading {
+        font-size: 14px;
+
+    }
+
+    .achievement-obtained,
+    .achievement-not-obtained {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .achievement-container {
+        flex-direction: row;
+
+        max-width: none;
+
+    }
+
+    .achievement-container img {
+        width: 25%;
+
+    }
+
+    .achievement-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .achievement-name {
+        font-size: 12px;
+
+    }
+
+    .achievement-description {
+        font-size: 10px;
+
+    }
+
+    .setting-display {
+        width: 100%;
+        
+    }
+}

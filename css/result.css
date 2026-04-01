@@ -1,0 +1,82 @@
+@import 'color.css';
+
+.quiznow-result {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+
+    max-width: 800px;
+    height: 400px;
+
+    background-color: var(--seagull-90);
+    color: whitesmoke;
+
+    font-size: 24px;
+    line-height: 1.7;
+
+    box-shadow: 0 0 4px whitesmoke;
+    border-radius: 12px;
+    margin: 100px auto auto auto;
+    padding: 20px;
+
+}
+
+.progression-indicator {
+    display: flex;
+    align-items: center;
+}
+
+.indicator {
+    width: 20px;
+    height: 20px;
+
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px whitesmoke;
+}
+
+.indicator.green {
+    background-color: rgb(125, 255, 125);
+
+}
+
+.indicator.red {
+    background-color: red;
+    
+}
+
+.navigation-section {
+    display: flex;
+
+    max-width: 800px;
+
+    margin: 20px auto auto auto;
+    padding: 20px;
+}
+
+.navigation-section > div {
+    flex: 1;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .quiznow-result {
+        grid-template-columns: 1fr 1fr;
+
+        max-width: 80%;
+
+        font-size: 16px;
+
+    }
+
+    .navigation-section {
+        display: flex;
+
+        max-width: 800px;
+
+        margin: 20px auto auto auto;
+        padding: 20px;
+    }
+    
+}

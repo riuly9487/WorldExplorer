@@ -1,0 +1,28 @@
+/* CSS Variables generated from Kigen.design */
+/* WorldExplorer's UI Colors */
+:root {
+    --seagull-10: #e2f4fb;
+    --seagull-20: #b5e5f5;
+    --seagull-30: #74cbe3;
+    --seagull-40: #6abad0;
+    --seagull-50: #5ca3b7;
+    --seagull-60: #4d8a9b;
+    --seagull-70: #3d707e;
+    --seagull-80: #2d5560;
+    --seagull-90: #1d3a42;
+    --seagull-100: #0e2025;
+    --seagull-110: #061316;
+
+/* Button's UI Colors */
+    --saffron-10: #fdefd8;
+    --saffron-20: #fce0ad;
+    --saffron-30: #f9c846;
+    --saffron-40: #e4b73f;
+    --saffron-50: #c8a036;
+    --saffron-60: #a9872d;
+    --saffron-70: #896d22;
+    --saffron-80: #685218;
+    --saffron-90: #47370d;
+    --saffron-100: #271d04;
+    --saffron-110: #171002;
+}

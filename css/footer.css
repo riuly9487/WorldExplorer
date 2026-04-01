@@ -1,0 +1,21 @@
+@import './color.css';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    
+    background-color: var(--seagull-30);
+
+    margin-top: 8px;
+    box-shadow: 0px 0px 4px var(--seagull-100);
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        font-size: 12px;
+    }
+    
+}

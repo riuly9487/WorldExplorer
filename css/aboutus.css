@@ -1,0 +1,197 @@
+@import './color.css';
+
+.about-us-webpages {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+
+    margin: 20px 0;
+}
+
+.about-us-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: justify;
+
+    margin-bottom: 60px;
+}
+
+.about-us-header .title {
+    width: 1080px;
+}
+
+.about-us-header .title,
+.about-us-section .title,
+.ethical-usage-section .row .title {
+    text-align: center;
+
+}
+
+.about-us-header .title,
+.about-us-section .content .title,
+.ethical-usage-section .row .title  {
+    background-color: var(--seagull-30);
+
+    border-radius: 8px;
+    box-shadow: 0 0 2px var(--seagull-100);
+    padding: 8px 16px;
+
+}
+
+.about-us-header .media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1080px;
+
+}
+
+.about-us-header .description {
+    width: 1080px;
+}
+
+.about-us-header .description,
+.about-us-section .description,
+.ethical-usage-section .row .content {
+    background-color: var(--seagull-10);
+
+    border-radius: 8px;
+    padding: 8px 16px;
+
+}
+
+.about-us-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    margin-bottom: 60px;
+}
+
+.about-us-section .media {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-section .media img,
+.about-us-section .content {
+    width: 640px;
+}
+
+.about-us-header .title,
+.about-us-section .content .title,
+.ethical-usage-section .row .title {
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+.about-us-header .media,
+.about-us-header .title,
+.about-us-section .content .title,
+.about-us-header .description div,
+.about-us-section .content .description div,
+.ethical-usage-section .row .title,
+.ethical-usage-section .row .content { 
+    margin: 20px 0;
+}
+
+.ethical-usage-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.ethical-usage-section .row {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+
+    width: 380px;
+
+    padding: 10px;
+}
+
+.ethical-usage-section a {
+    color: var(--seagull-80);
+
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .about-us-webpages {
+        font-size: 12px;
+
+    }
+
+    .about-us-header .title {
+        width: 90%;
+
+    }
+
+    .about-us-header .media {
+        width: 50%;
+
+    }
+
+    .about-us-header .description {
+        width: 80%;
+
+    }
+
+    .about-us-header .media {
+        flex-direction: column;
+
+    }
+
+    iframe {
+        width: 384px;
+        height: 216px;
+
+        margin-bottom: 20px;
+    }
+
+    .about-us-section {
+        flex-direction: column;
+
+    }
+
+    .about-us-section a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .about-us-section .media img,
+    .about-us-section .content {
+        width: 80%;
+    }
+
+    .about-us-header .title,
+    .about-us-section .content .title,
+    .ethical-usage-section .row .title {
+        font-size: 16px;
+
+    }
+
+    .ethical-usage-section {
+        flex-direction: column;
+
+    }
+
+    .ethical-usage-section .row {
+        width: 80%;
+
+        margin: auto;
+    }
+}

@@ -1,0 +1,221 @@
+@import 'color.css';
+
+.website-library-title, .website-countries-title,
+.website-region-title {
+    padding: 16px 32px
+}
+
+.website-library-title .heading, .website-countries-title .heading,
+.website-region-title .heading {
+    font-size: 32px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.website-library-title .subheading, .website-countries-title .subheading,
+.website-region-title .subheading {
+    font-size: 18px;
+    font-weight: 400;
+
+    margin-bottom: 8px;
+}
+
+.library-content, .country-content, .region-content {
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    gap: 32px;
+
+    padding: 16px 32px;
+    margin-bottom: 200px;
+}
+
+.library-item, .country-item, .region-item {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--seagull-10);
+
+    padding: 16px;
+    border-radius: 24px;
+    box-shadow: 0 0 2px var(--seagull-100);
+
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, font-size 0.3s ease;
+}
+
+.library-item img, .country-item img, .region-item img {
+    align-self: center;
+
+    width: 100%;
+
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 0 2px var(--seagull-100);
+
+    transition: box-shadow 0.3s ease;
+}
+
+.library-item img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.country-item img{
+    aspect-ratio: 3/2;
+}
+
+.region-item img{
+    aspect-ratio: 1/1;
+
+    border-radius: 256px;
+}
+
+.library-item-title, .country-item-title, .region-item-title {
+    font-size: 18px;
+    transform-origin: left;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+    transition: transform 0.3s ease;
+}
+
+.library-item-description, .country-item-description,
+.region-item-description {
+    font-size: 14px;
+    color: var(--seagull-100);
+    
+    margin-bottom: 16px;
+
+    opacity: 0.6;
+}
+
+.library-item-button, .country-item-button, .region-item-button {
+    align-self: center;
+}
+
+.library-item:hover, .country-item:hover, .region-item:hover {
+    background-color: #c5effb;
+
+    box-shadow: 0 0 6px var(--seagull-90);
+}
+
+.library-item:hover .library-item-title,
+.country-item:hover .country-item-title,
+.region-item:hover .region-item-title{
+    transform: scale(1.35);
+}
+
+.library-item:hover img, .country-item:hover img,
+.region-item:hover img{
+    box-shadow: 0 0 6px var(--seagull-90);
+}
+
+.website-navigation-functionality-mono,
+.website-navigation-functionality-trio {
+    display: flex;
+    
+    padding: 16px 32px;
+}
+
+.website-navigation-functionality-mono {
+    justify-content: flex-start;
+    
+}
+
+.website-navigation-functionality-mono.end {
+    justify-content: flex-end;
+    
+}
+
+.website-navigation-functionality-trio {
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.website-navigation-functionality-trio > div {
+    flex: 1;
+
+}
+
+.website-navigation-functionality-trio > div:last-child {
+    text-align: right;
+    
+}
+
+.website-navigation-functionality-trio .current-progress {
+    color: whitesmoke;
+    
+    text-align: center;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 800px) {
+    .website-library-title, .website-countries-title,
+    .website-region-title {
+        padding: 8px 16px
+    }
+
+    .website-library-title .heading, .website-countries-title .heading,
+    .website-region-title .heading {
+        font-size: 16px;
+
+    }
+
+    .website-library-title .subheading, .website-countries-title .subheading,
+    .website-region-title .subheading {
+        font-size: 10px;
+        
+    }
+
+    .library-content, .country-content, .region-content {
+        grid-template-columns: 160px 160px 160px;
+        gap: 16px;
+
+        padding: 8px 16px;
+    }
+
+    .library-item, .country-item, .region-item {
+        padding: 8px;
+        border-radius: 12px;
+
+    }
+
+    .library-item img, .country-item img, .region-item img {
+        align-self: center;
+
+        width: 90%;
+    }
+
+    .library-item-title, .country-item-title, .region-item-title {
+        font-size: 12px;
+
+    }
+
+    .library-item-description, .country-item-description,
+    .region-item-description {
+        font-size: 10px;
+
+    }
+
+    .website-navigation-functionality-mono,
+    .website-navigation-functionality-trio {
+        padding: 8px 16px;
+
+    }
+
+    .website-navigation-functionality-trio .current-progress {
+        font-size: 12px;
+        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .library-content, .country-content, .region-content {
+        grid-template-columns: 160px 160px;
+        justify-content: center;
+        align-items: center;
+    }
+}
