@@ -1599,5 +1599,5 @@ export const regionData = [{
     id: 'ea',
     regionname: 'East Asia',
     regiondescription: 'Region known for ancient civilisations and modern technology',
-    img: 'https://res.cloudinary.com/dyghlzxwz/image/upload/q_auto/f_auto/v1775018438/sea_jle5pu.webp'
+    img: 'https://res.cloudinary.com/dyghlzxwz/image/upload/q_auto/f_auto/v1775018438/ea_hs6wuv.webp'
 }]
