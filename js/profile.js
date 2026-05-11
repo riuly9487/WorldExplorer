@@ -29,7 +29,7 @@ function selectionDisplay(value) {
         currentDisplay = `
                             <div class="profile-section">
                                 <div>
-                                    <img class="profile-picture" src='${userProfile.img}'}>
+                                    <img class="profile-picture" src='${userProfile.img}'>
                                     <div class="profile-data-grid">
                                         <div>
                                             Name:
@@ -85,7 +85,7 @@ function defaultLoad() {
     currentDisplay = `
                     <div class="profile-section">
                         <div>
-                            <img class="profile-picture" src='${userProfile.img}'}>
+                            <img class="profile-picture" src='${userProfile.img}'>
                             <div class="profile-data-grid">
                                 <div>
                                     Name:
