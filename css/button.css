@@ -4,7 +4,7 @@
 .btn-return, .btn-country-page, .btn-region-page,
 .btn-previous, .btn-next, .btn-exit, .btn-quit, .quiznow-choice, .btn-toggle,
 .btn-next-question, .btn-return-to-quiznow, .btn-play-again, .btn-edit,
-.btn-reset, .btn-submit, .btn-reset-account {
+.btn-reset, .btn-submit, .btn-reset-account, .btn-return-to-homepage {
     font-weight: bold;
 
     border-style: none;
@@ -20,7 +20,7 @@
 .btn-return, .btn-country-page, .btn-region-page,
 .btn-previous, .btn-next, .btn-exit, .btn-quit, .btn-toggle,
 .btn-next-question, .btn-return-to-quiznow, .btn-play-again,
-.btn-edit, .btn-reset, .btn-submit {
+.btn-edit, .btn-reset, .btn-submit, .btn-return-to-homepage {
     font-size: 16px;
 
     background-color: var(--saffron-30);
@@ -52,7 +52,7 @@
 .btn-return:hover, .btn-country-page:hover, .btn-region-page:hover,
 .btn-previous:hover, .btn-next:hover, .btn-exit:hover, .btn-quit:hover, .btn-toggle:hover,
 .btn-next-question:hover, .btn-return-to-quiznow:hover, .btn-play-again:hover,
-.btn-edit:hover, .btn-reset:hover, .btn-submit:hover {
+.btn-edit:hover, .btn-reset:hover, .btn-submit:hover, .btn-return-to-homepage:hover {
     color: white;
 
     background-color: var(--saffron-50);
@@ -64,7 +64,7 @@
 .btn-return:active, .btn-country-page:active, .btn-region-page:active,
 .btn-previous:active, .btn-next:active, .btn-exit:active, .btn-quit:active, .btn-toggle:active,
 .btn-next-question:active, .btn-return-to-quiznow:active, .btn-play-again:active,
-.btn-edit:active, .btn-reset:active, .btn-submit:active {
+.btn-edit:active, .btn-reset:active, .btn-submit:active, .btn-return-to-homepage:active {
     color: white;
 
     background-color: var(--saffron-40);
@@ -90,7 +90,7 @@
     .btn-return, .btn-country-page, .btn-region-page,
     .btn-previous, .btn-next, .btn-exit, .btn-quit, .quiznow-choice, .btn-toggle,
     .btn-next-question, .btn-return-to-quiznow, .btn-play-again, .btn-edit,
-    .btn-reset, .btn-submit, .btn-reset-account{
+    .btn-reset, .btn-submit, .btn-reset-account, .btn-return-to-homepage {
         padding: 10px 24px;
         border-radius: 12px;
 
@@ -100,7 +100,7 @@
     .btn-return, .btn-country-page, .btn-region-page,
     .btn-previous, .btn-next, .btn-exit, .btn-quit, .btn-toggle,
     .btn-next-question, .btn-return-to-quiznow, .btn-play-again,
-    .btn-edit, .btn-reset, .btn-submit {
+    .btn-edit, .btn-reset, .btn-submit, .btn-return-to-homepage {
         font-size: 12px;
 
     }
