@@ -33,7 +33,7 @@
 
 /* Target the direct children (items) inside your containers */
 .library-content > *, .country-content > *, .region-content > * {
-    flex: 0 0 300px;         /* Keeps each item locked at exactly 320px wide */
+    flex: 0 0 300px;   
 }
 
 .library-item, .country-item, .region-item {
@@ -177,7 +177,6 @@
     }
 
     .library-content, .country-content, .region-content {
-        grid-template-columns: 160px 160px 160px;
         gap: 16px;
 
         padding: 8px 16px;
@@ -219,9 +218,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .library-content, .country-content, .region-content {
-        grid-template-columns: 160px 160px;
-        justify-content: center;
-        align-items: center;
+    .library-content > *, .country-content > *, .region-content > * {
+        flex: 0 0 120px;       
     }
 }
