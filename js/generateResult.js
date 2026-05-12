@@ -77,7 +77,7 @@ if (totalMark >= 3) {
 }
 
 if (totalMark < 3) {
-    resultDisplayText.innerHTML = 'Oops! You can do it better next time! :('
+    resultDisplayText.innerHTML = 'You failed. Answer correctly 3 times and above to pass the quiz.'
 }
 
 let audio;
