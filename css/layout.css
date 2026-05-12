@@ -22,12 +22,18 @@
 }
 
 .library-content, .country-content, .region-content {
-    display: grid;
-    grid-template-columns: 320px 320px 320px 320px;
+    display: flex;
+    flex-wrap: wrap;         /* Allows items to move to the next row */
+    justify-content: center; /* Centers items horizontally on every row */
     gap: 32px;
 
     padding: 16px 32px;
     margin-bottom: 200px;
+}
+
+/* Target the direct children (items) inside your containers */
+.library-content > *, .country-content > *, .region-content > * {
+    flex: 0 0 300px;         /* Keeps each item locked at exactly 320px wide */
 }
 
 .library-item, .country-item, .region-item {
