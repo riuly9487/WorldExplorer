@@ -1,0 +1,84 @@
+@import './color.css';
+
+.game-section-layout {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 20px;
+}
+
+.mobile-bar {
+    display: none !important;
+
+    margin-bottom: 10px;
+}
+
+.nav-pc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-pc > div {
+    flex: 1
+}
+
+.nav-pc > div:first-child {
+    text-align: left;
+}
+
+.nav-pc > div:last-child {
+    text-align: right;
+}
+
+.current-progress {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: whitesmoke;
+    font-size: 24px;
+
+    text-align: center;
+
+}
+
+@media screen and (max-width: 800px) {
+    .game-section-layout {
+        height: 80px;
+        
+    }
+
+    .mobile-bar {
+        display: flex !important;
+    }
+
+    .pc-bar {
+        display: none !important;
+    }
+
+    .nav-pc {
+        justify-content: center;
+    }
+
+    .btn-quit {
+        height: 100%;
+    }
+
+    .button-group {
+        display: none;
+        margin-left: 10px;
+    }
+
+    .button-group.visible {
+        display: flex;
+    }
+
+    .nav-pc > div {
+        flex: 0
+    }
+
+    .current-progress {
+        font-size: 18px;
+
+    }
+}
