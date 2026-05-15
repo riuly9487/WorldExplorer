@@ -91,7 +91,10 @@ function renderQuestion() {
 
     let chosenQuestionSet = selectedQuestionnaire[chosenQuestionIndex[currentIndex]];
 
-    document.querySelector('.current-progress').innerHTML = 'Question ' + (currentIndex + 1)
+    document.querySelectorAll('.current-progress')
+        .forEach((button) => {
+            button.innerHTML = 'Question ' + (currentIndex + 1)
+        }) 
     document.querySelector('.question-image').src = chosenQuestionSet.img
     document.querySelector('.question-text').innerHTML = chosenQuestionSet.question
 
@@ -135,6 +138,7 @@ function renderQuestion() {
                 setTimeout(displayExplanation, 1000)
 
                 function displayExplanation() {
+                    document.querySelector('.button-group').classList.add('visible')
                     document.querySelector('.btn-toggle').classList.add('visible')
                     document.querySelector('.btn-next-question').classList.add('visible')
                     document.querySelector('.quiznow-explanation').classList.add('visible')
@@ -171,6 +175,7 @@ document.querySelector('.btn-next-question')
             checkPageSave(false)
 
             function resetQuestion() {
+                document.querySelector('.button-group').classList.remove('visible')
                 document.querySelector('.btn-toggle').classList.remove('visible')
                 document.querySelector('.btn-next-question').classList.remove('visible')
                 document.querySelector('.quiznow-explanation').classList.remove('visible')
